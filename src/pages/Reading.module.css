@@ -1,0 +1,160 @@
+.page {
+  min-height: 100vh;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 6rem clamp(1.5rem, 5vw, 4rem) 4rem;
+  border-bottom: 1px solid var(--grey-100);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--grey-400);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* ─── BOOK TABLE ─────────────────────────────────────────── */
+.tableWrap {
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  flex: 1;
+}
+
+.tableHead {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid var(--black);
+}
+
+.th {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+}
+
+.bookRow {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--grey-100);
+  transition: background var(--transition);
+  cursor: default;
+}
+
+.bookRow:hover {
+  padding-left: 0.75rem;
+  background: transparent;
+}
+
+.bookRow:hover .bookTitle {
+  color: var(--grey-400);
+}
+
+.rowNum {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--grey-200);
+  padding-top: 0.2rem;
+}
+
+.bookTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+  transition: color var(--transition);
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.bookAuthor {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--grey-400);
+  font-style: italic;
+}
+
+.bookWhen {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--black);
+  padding-top: 0.2rem;
+}
+
+.bookWhy {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--grey-400);
+  line-height: 1.6;
+}
+
+/* ─── PAPERS ─────────────────────────────────────────────── */
+.papers {
+  padding: 5rem clamp(1.5rem, 5vw, 4rem);
+  border-top: 1px solid var(--grey-100);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+}
+
+.papersLabel {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  padding-top: 0.4rem;
+}
+
+.paperList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.paperItem {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--grey-100);
+}
+
+.paperTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.paperMeta {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--grey-400);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 900px) {
+  .tableHead, .bookRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .rowNum, .th { display: none; }
+  .papers { grid-template-columns: 1fr; gap: 1rem; }
+}

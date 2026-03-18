@@ -1,0 +1,260 @@
+.page {
+  min-height: 100vh;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero {
+  padding: 6rem clamp(1.5rem, 5vw, 4rem) 5rem;
+  border-bottom: 1px solid var(--grey-100);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.heroLeft {}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.nameItalic {
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+}
+
+.bio {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bioPara {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--black);
+}
+
+.bioPara em {
+  font-style: italic;
+  color: var(--grey-400);
+}
+
+/* ─── FACTS ──────────────────────────────────────────────── */
+.heroRight {
+  padding-top: 1rem;
+}
+
+.factsLabel {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  margin-bottom: 2rem;
+}
+
+.factList {
+  display: flex;
+  flex-direction: column;
+}
+
+.fact {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid var(--grey-100);
+  gap: 1rem;
+}
+
+.factKey {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--grey-400);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.factVal {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--black);
+  text-align: right;
+}
+
+/* ─── SKILLS ─────────────────────────────────────────────── */
+.skills {
+  padding: 5rem clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--grey-100);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.skillsLabel {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  padding-top: 0.4rem;
+}
+
+.skillColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skillGroupTitle {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+.skillItem {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--grey-400);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--grey-100);
+}
+
+/* ─── BUSINESSES ─────────────────────────────────────────── */
+.businesses {
+  padding: 5rem clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--grey-100);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+}
+
+.bizLabel {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  padding-top: 0.4rem;
+}
+
+.bizGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--grey-100);
+  border: 1px solid var(--grey-100);
+}
+
+.bizCard {
+  background: var(--white);
+  padding: 2rem;
+}
+
+.bizName {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.bizPeriod {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--grey-400);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.bizDesc {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--grey-400);
+  line-height: 1.6;
+}
+
+.bizClosed {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--grey-100);
+  color: var(--grey-200);
+  margin-top: 1rem;
+}
+
+/* ─── QUOTE ──────────────────────────────────────────────── */
+.quote {
+  padding: 6rem clamp(1.5rem, 5vw, 4rem);
+  background: var(--black);
+  color: var(--white);
+}
+
+.quoteText {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.35;
+  max-width: 900px;
+}
+
+.quoteText em {
+  font-style: italic;
+  color: rgba(255,255,255,0.35);
+}
+
+.quoteText strong {
+  font-weight: 900;
+}
+
+.quoteSource {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 3rem; }
+  .skills { grid-template-columns: 1fr; gap: 1rem; }
+  .skillColumns { grid-template-columns: 1fr 1fr; }
+  .businesses { grid-template-columns: 1fr; gap: 1rem; }
+  .bizGrid { grid-template-columns: 1fr; }
+}

@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Roadmap from './pages/Roadmap';
 import Reading from './pages/Reading';
 import About from './pages/About';
+import Downloads from './pages/Downloads';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/reading" element={<Reading />} />
         <Route path="/about" element={<About />} />
+        <Route path="/downloads" element={<Downloads />} />
       </Routes>
     </BrowserRouter>
   );

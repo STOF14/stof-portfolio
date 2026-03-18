@@ -58,6 +58,14 @@ export default function Nav() {
         >
           About
         </NavLink>
+        <NavLink
+          to="/downloads"
+          className={({ isActive }) =>
+            `${styles.link} ${isActive ? styles.active : ''}`
+          }
+        >
+          Downloads
+        </NavLink>
       </div>
     </nav>
   );
